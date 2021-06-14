@@ -1,0 +1,456 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="我的个人博客">
+  <meta name="author" content="时光">
+  <meta name="keywords" content="www">
+  <title>2016 ICPC Dalian-Find Small A - 时光</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/androidstudio.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"xuekanhua.github.io","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":".","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>时光</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="2016 ICPC Dalian-Find Small A">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-01-23 19:32" pubdate>
+        2021年1月23日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      460 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      8
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">2016 ICPC Dalian-Find Small A</h1>
+            
+            <div class="markdown-body">
+              <h1 id="2016-ICPC-Dalian-Find-Small-A"><a href="#2016-ICPC-Dalian-Find-Small-A" class="headerlink" title="2016 ICPC Dalian-Find Small A"></a>2016 ICPC Dalian-Find Small A</h1><h2 id="签到题"><a href="#签到题" class="headerlink" title="签到题"></a>签到题</h2><span id="more"></span>
+<The>
+
+
+<h1 id="原题"><a href="#原题" class="headerlink" title="原题"></a>原题</h1><h4 id="As-is-known-to-all-the-ASCII-of-character-‘a’-is-97-Now-find-out-how-many-character-‘a’-in-a-group-of-given-numbers-Please-note-that-the-numbers-here-are-given-by-32-bits’-integers-in-the-computer-That-means-1digit-represents-4-characters-one-character-is-represented-by-8-bits’-binary-digits"><a href="#As-is-known-to-all-the-ASCII-of-character-‘a’-is-97-Now-find-out-how-many-character-‘a’-in-a-group-of-given-numbers-Please-note-that-the-numbers-here-are-given-by-32-bits’-integers-in-the-computer-That-means-1digit-represents-4-characters-one-character-is-represented-by-8-bits’-binary-digits" class="headerlink" title="As is known to all,the ASCII of character ‘a’ is 97. Now,find out how many character ‘a’ in a group of given numbers. Please note that the numbers here are given by 32 bits’ integers in the computer.That means,1digit represents 4 characters(one character is represented by 8 bits’ binary digits)."></a>As is known to all,the ASCII of character ‘a’ is 97. Now,find out how many character ‘a’ in a group of given numbers. Please note that the numbers here are given by 32 bits’ integers in the computer.That means,1digit represents 4 characters(one character is represented by 8 bits’ binary digits).</h4><h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><h4 id="The-input-contains-a-set-of-test-data-The-first-number-is-one-positive-integer-N-1≤N≤100-and-then-N-positive-integersai-1≤-ai≤2-32-1-follow"><a href="#The-input-contains-a-set-of-test-data-The-first-number-is-one-positive-integer-N-1≤N≤100-and-then-N-positive-integersai-1≤-ai≤2-32-1-follow" class="headerlink" title="The input contains a set of test data.The first number is one positive integer N (1≤N≤100),and then N positive integersai (1≤ ai≤2^32 - 1) follow"></a>The input contains a set of test data.The first number is one positive integer N (1≤N≤100),and then N positive integersai (1≤ ai≤2^32 - 1) follow</h4><h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><h4 id="Output-one-line-including-an-integer-representing-the-number-of-‘a’-in-the-group-of-given-numbers"><a href="#Output-one-line-including-an-integer-representing-the-number-of-‘a’-in-the-group-of-given-numbers" class="headerlink" title="Output one line,including an integer representing the number of ‘a’ in the group of given numbers."></a>Output one line,including an integer representing the number of ‘a’ in the group of given numbers.</h4><h2 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h2><figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">3<br>97 24929 100<br></code></pre></div></td></tr></table></figure>
+
+
+<h2 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h2><figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">3<br></code></pre></div></td></tr></table></figure>
+
+
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><h2 id="在ASCII码中，a的值为97。现在给你一组整数，请你计算里面有多少个a。请注意，所给的数字在计算机中都是32位整数，而一个字符占8位"><a href="#在ASCII码中，a的值为97。现在给你一组整数，请你计算里面有多少个a。请注意，所给的数字在计算机中都是32位整数，而一个字符占8位" class="headerlink" title="在ASCII码中，a的值为97。现在给你一组整数，请你计算里面有多少个a。请注意，所给的数字在计算机中都是32位整数，而一个字符占8位"></a>在ASCII码中，a的值为97。现在给你一组整数，请你计算里面有多少个a。<br/>请注意，所给的数字在计算机中都是32位整数，而一个字符占8位</h2><h2 id="只要将数字转化成二进制代码在八位八位的计算即可。"><a href="#只要将数字转化成二进制代码在八位八位的计算即可。" class="headerlink" title="只要将数字转化成二进制代码在八位八位的计算即可。"></a>只要将数字转化成二进制代码在八位八位的计算即可。</h2><h1 id="解题代码"><a href="#解题代码" class="headerlink" title="解题代码"></a>解题代码</h1><figure class="highlight c++"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cmath&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>&#123;<br>    <span class="hljs-keyword">int</span> n;<br>    <span class="hljs-keyword">int</span> s = <span class="hljs-number">0</span>;<br>    cin&gt;&gt;n;<br>    <span class="hljs-keyword">while</span> (n--)<br>    &#123;<br>        <span class="hljs-keyword">int</span> x;<br>        cin&gt;&gt;x;<br>        <span class="hljs-keyword">int</span> a[<span class="hljs-number">33</span>] = &#123;&#125;,i = <span class="hljs-number">31</span>;<br>        <span class="hljs-keyword">while</span> (x != <span class="hljs-number">0</span>)<br>        &#123;<br>            a[i] = x%<span class="hljs-number">2</span>;<br>            x = x/<span class="hljs-number">2</span>;<br>            i--;<br>        &#125;<br>        <span class="hljs-keyword">if</span>((a[<span class="hljs-number">0</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">1</span>] == <span class="hljs-number">1</span>) &amp;&amp; (a[<span class="hljs-number">2</span>] == <span class="hljs-number">1</span>) &amp;&amp; (a[<span class="hljs-number">3</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">4</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">5</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">6</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">7</span>] == <span class="hljs-number">1</span>))&#123;<br>            s++;<br>        &#125;<br>         <span class="hljs-keyword">if</span>((a[<span class="hljs-number">8</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">9</span>] == <span class="hljs-number">1</span>) &amp;&amp; (a[<span class="hljs-number">10</span>] == <span class="hljs-number">1</span>) &amp;&amp; (a[<span class="hljs-number">11</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">12</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">13</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">14</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">15</span>] == <span class="hljs-number">1</span>))&#123;<br>            s++;<br>        &#125; <span class="hljs-keyword">if</span>((a[<span class="hljs-number">16</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">17</span>] == <span class="hljs-number">1</span>) &amp;&amp; (a[<span class="hljs-number">18</span>] == <span class="hljs-number">1</span>) &amp;&amp; (a[<span class="hljs-number">19</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">20</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">21</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">22</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">23</span>] == <span class="hljs-number">1</span>))&#123;<br>            s++;<br>        &#125; <span class="hljs-keyword">if</span>((a[<span class="hljs-number">24</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">25</span>] == <span class="hljs-number">1</span>) &amp;&amp; (a[<span class="hljs-number">26</span>] == <span class="hljs-number">1</span>) &amp;&amp; (a[<span class="hljs-number">27</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">28</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">29</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">30</span>] == <span class="hljs-number">0</span>) &amp;&amp; (a[<span class="hljs-number">31</span>] == <span class="hljs-number">1</span>))&#123;<br>            s++;<br>        &#125;<br>    &#125;<br>    cout&lt;&lt;s&lt;&lt;endl;<br>    <br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></div></td></tr></table></figure>
+<h1 id="代码结束"><a href="#代码结束" class="headerlink" title="代码结束"></a>代码结束</h1>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/code/">code</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%B0%B4/">水</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！ο(=•ω＜=)ρ⌒☆</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/01/23/2,%E6%95%B0%E5%AD%97%E4%B8%89%E8%A7%92%E5%BD%A2/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">数字三角形</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/01/23/6,Subsequence/">
+                        <span class="hidden-mobile">Subsequence（尺取法）</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://xuekanhua.github.io/" target="_blank" rel="nofollow noopener"><span>blog</span></a> <i class="iconfont icon-love"></i> <a href="https://xuekanhua.github.io/" target="_blank" rel="nofollow noopener"><span>时光</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>
