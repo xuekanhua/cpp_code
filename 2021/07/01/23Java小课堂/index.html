@@ -15,9 +15,9 @@
   
   <meta name="theme-color" content="#2f4154">
   <meta name="description" content="我的个人博客">
-  <meta name="author" content="时光">
+  <meta name="author" content="拾光">
   <meta name="keywords" content="www">
-  <title>To begin or not to begin - 时光</title>
+  <title>java string - 时光</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -150,7 +150,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="To begin or not to begin">
+            <span class="h2" id="subtitle" title="java string">
               
             </span>
 
@@ -160,8 +160,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-02-01 16:32" pubdate>
-        2021年2月1日 下午
+      <time datetime="2021-07-01 16:32" pubdate>
+        2021年7月1日 下午
       </time>
     </span>
   
@@ -172,7 +172,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      367 字
+      609 字
     </span>
   
 
@@ -182,7 +182,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      6
+      8
        分钟
     </span>
   
@@ -212,21 +212,44 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">To begin or not to begin</h1>
+            <h1 style="display: none">java string</h1>
             
             <div class="markdown-body">
-              <h1 id="To-begin-or-not-to-begin"><a href="#To-begin-or-not-to-begin" class="headerlink" title="To begin or not to begin"></a>To begin or not to begin</h1><h2 id="简单"><a href="#简单" class="headerlink" title="简单"></a>简单</h2><span id="more"></span>
+              <h1 id="java-string"><a href="#java-string" class="headerlink" title="java string"></a>java string</h1><p>String中用“==”比较的是地址，用equals比较的是内容</p>
+<span id="more"></span>
 <The>
 
 
-<h1 id="原题"><a href="#原题" class="headerlink" title="原题"></a>原题</h1><h4 id="A-box-contains-black-balls-and-a-single-red-ball-Alice-and-Bob-draw-balls-from-this-box-without-replacement-alternating-after-each-draws-until-the-red-ball-is-drawn-The-game-is-won-by-the-player-who-happens-to-draw-the-single-red-ball-Bob-is-a-gentleman-and-offers-Alice-the-choice-of-whether-she-wants-to-start-or-not-Alice-has-a-hunch-that-she-might-be-better-off-if-she-starts-after-all-she-might-succeed-in-the-first-draw-On-the-other-hand-if-her-first-draw-yields-a-black-ball-then-Bob’s-chances-to-draw-the-red-ball-in-his-first-draw-are-increased-because-then-one-black-ball-is-already-removed-from-the-box-How-should-Alice-decide-in-order-to-maximize-her-probability-of-winning-Help-Alice-with-decision"><a href="#A-box-contains-black-balls-and-a-single-red-ball-Alice-and-Bob-draw-balls-from-this-box-without-replacement-alternating-after-each-draws-until-the-red-ball-is-drawn-The-game-is-won-by-the-player-who-happens-to-draw-the-single-red-ball-Bob-is-a-gentleman-and-offers-Alice-the-choice-of-whether-she-wants-to-start-or-not-Alice-has-a-hunch-that-she-might-be-better-off-if-she-starts-after-all-she-might-succeed-in-the-first-draw-On-the-other-hand-if-her-first-draw-yields-a-black-ball-then-Bob’s-chances-to-draw-the-red-ball-in-his-first-draw-are-increased-because-then-one-black-ball-is-already-removed-from-the-box-How-should-Alice-decide-in-order-to-maximize-her-probability-of-winning-Help-Alice-with-decision" class="headerlink" title="A box contains black balls and a single red ball. Alice and Bob draw balls from this box without replacement, alternating after each draws until the red ball is drawn. The game is won by the player who happens to draw the single red ball. Bob is a gentleman and offers Alice the choice of whether she wants to start or not. Alice has a hunch that she might be better off if she starts; after all, she might succeed in the first draw. On the other hand, if her first draw yields a black ball, then Bob’s chances to draw the red ball in his first draw are increased, because then one black ball is already removed from the box. How should Alice decide in order to maximize her probability of winning? Help Alice with decision."></a>A box contains black balls and a single red ball. Alice and Bob draw balls from this box without replacement, alternating after each draws until the red ball is drawn. The game is won by the player who happens to draw the single red ball. Bob is a gentleman and offers Alice the choice of whether she wants to start or not. Alice has a hunch that she might be better off if she starts; after all, she might succeed in the first draw. On the other hand, if her first draw yields a black ball, then Bob’s chances to draw the red ball in his first draw are increased, because then one black ball is already removed from the box. How should Alice decide in order to maximize her probability of winning? Help Alice with decision.</h4><h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><h4 id="Multiple-test-cases-number-of-test-cases≤50-process-till-end-of-input-For-each-case-a-positive-integer-k-1≤k≤10-5-is-given-on-a-single-line"><a href="#Multiple-test-cases-number-of-test-cases≤50-process-till-end-of-input-For-each-case-a-positive-integer-k-1≤k≤10-5-is-given-on-a-single-line" class="headerlink" title="Multiple test cases (number of test cases≤50), process till end of input.For each case, a positive integer k (1≤k≤10^5) is given on a single line."></a>Multiple test cases (number of test cases≤50), process till end of input.<br>For each case, a positive integer k (1≤k≤10^5) is given on a single line.</h4><h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><h4 id="For-each-case-output-1-if-the-player-who-starts-drawing-has-an-advantage2-if-the-player-who-starts-drawing-has-a-disadvantage0-if-Alice’s-and-Bob’s-chances-are-equal-no-matter-who-starts-drawing-on-a-single-line"><a href="#For-each-case-output-1-if-the-player-who-starts-drawing-has-an-advantage2-if-the-player-who-starts-drawing-has-a-disadvantage0-if-Alice’s-and-Bob’s-chances-are-equal-no-matter-who-starts-drawing-on-a-single-line" class="headerlink" title="For each case, output:1, if the player who starts drawing has an advantage2, if the player who starts drawing has a disadvantage0, if Alice’s and Bob’s chances are equal, no matter who starts drawing on a single line."></a>For each case, output:<br>1, if the player who starts drawing has an advantage<br>2, if the player who starts drawing has a disadvantage<br>0, if Alice’s and Bob’s chances are equal, no matter who starts drawing on a single line.</h4><h2 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h2><figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">1<br>2<br></code></pre></div></td></tr></table></figure>
+<ul>
+<li>类型常量池</li>
+</ul>
+<ul>
+<li>运行时常量池</li>
+<li>字符串常量池<br>1、类型常量池，存放在方法区里面，每个class文件都有一个<br>2、运行时常量池、存放在方法区里面，所有class共用<br>3、字符串常量池：存放在堆区里面<br>而且字符串常量池有一个特点：存放的常量唯一</li>
+</ul>
+<p>因为当我们String a = “xxx”；的时候，会在堆里面的字符串常量池里面“搜索”是否有“xxx”这个对象，</p>
+<p>有：就会将“xxx这个对象的地址指向a”<br>没有：就会在字符串常量池里面新建立一个“xxx”，然后就会把地址引用赋值给a<br>当再声明String b = “xxx”;和第一次声明String = “xxx”;一样，先”搜索“，然后因为已经存在了”xxx“这个对象，那么就不会再创建对象，而是将存在的”xxx“的地址引用赋值给b，所以a和b的地址一样，内容自然也一样，所以两个结果为true</p>
+<p>相关链接：<a target="_blank" rel="noopener" href="https://www.jb51.net/article/193813.htm">浅析java中String类型中“==”与“equal”的区别</a></p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java"><span class="hljs-keyword">package</span> java1;<br><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">study1</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>&#123;<br>        String s1,s2;<br>        s1=<span class="hljs-keyword">new</span> String(<span class="hljs-string">&quot;星光灿烂&quot;</span>);<br>        s2=<span class="hljs-keyword">new</span> String(<span class="hljs-string">&quot;星光灿烂&quot;</span>);<br>        System.out.println(s1.equals(s2));<br>        System.out.println(s1==s2);<br>        System.out.println(<span class="hljs-string">&quot;-----------------------&quot;</span>);<br>        System.out.println(System.identityHashCode(s1));<br><br>        System.out.println(System.identityHashCode(s2));<br>        System.out.println(<span class="hljs-string">&quot;-----------------------&quot;</span>);<br>        String s3,s4;<br>        s3=<span class="hljs-string">&quot;阳光明媚&quot;</span>;<br>        s4=<span class="hljs-string">&quot;阳光明媚&quot;</span>;<br><span class="hljs-comment">//        s4=&quot;ddd&quot;;</span><br><br>        System.out.println(s3.equals(s4));<br>        System.out.println(s3==s4);<br>        System.out.println(<span class="hljs-string">&quot;-----------------------&quot;</span>);<br>        System.out.println(System.identityHashCode(s3));<br>        System.out.println(System.identityHashCode(s4));<br>        System.out.println(<span class="hljs-string">&quot;-----------------------&quot;</span>);<br>    &#125;<br>&#125;<br><br></code></pre></div></td></tr></table></figure>
 
 
-<h2 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h2><figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">0<br>1<br></code></pre></div></td></tr></table></figure>
+<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">true<br>false<br><br>-----------------------<br>1072408673<br>1531448569<br><br>-----------------------<br>true<br>true<br><br>-----------------------<br>1867083167<br>1867083167<br><br>-----------------------<br></code></pre></div></td></tr></table></figure>
 
 
-<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><h2 id="箱子中有k个黑球和1个红球，求先手和后手胜率的大小。"><a href="#箱子中有k个黑球和1个红球，求先手和后手胜率的大小。" class="headerlink" title="箱子中有k个黑球和1个红球，求先手和后手胜率的大小。"></a>箱子中有k个黑球和1个红球，求先手和后手胜率的大小。</h2><h2 id="找规律，从k-1，慢慢往后推就会发现先手k为奇数胜率相同，k为偶数胜率略高。"><a href="#找规律，从k-1，慢慢往后推就会发现先手k为奇数胜率相同，k为偶数胜率略高。" class="headerlink" title="找规律，从k == 1，慢慢往后推就会发现先手k为奇数胜率相同，k为偶数胜率略高。"></a>找规律，从k == 1，慢慢往后推就会发现先手k为奇数胜率相同，k为偶数胜率略高。</h2><h1 id="解题代码"><a href="#解题代码" class="headerlink" title="解题代码"></a>解题代码</h1><figure class="highlight c++"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cmath&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>&#123;<br>    <span class="hljs-keyword">int</span> k;<br>    <span class="hljs-keyword">while</span> (<span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;k) != EOF)<br>    &#123;<br>        <span class="hljs-keyword">if</span>(k%<span class="hljs-number">2</span> == <span class="hljs-number">1</span>)&#123;<br>            <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d\n&quot;</span>,<span class="hljs-number">0</span>);<br>        &#125;<br>        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(k%<span class="hljs-number">2</span> == <span class="hljs-number">0</span>)&#123;<br>            <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d\n&quot;</span>,<span class="hljs-number">1</span>);<br>        &#125;<br>    &#125;<br>    <br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></div></td></tr></table></figure>
-<h1 id="代码结束"><a href="#代码结束" class="headerlink" title="代码结束"></a>代码结束</h1>
+<h3 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java"><span class="hljs-keyword">package</span> java1;<br><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">study1</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>&#123;<br>        String s1,s2;<br>        s1=<span class="hljs-keyword">new</span> String(<span class="hljs-string">&quot;星光灿烂&quot;</span>);<br>        s2=<span class="hljs-keyword">new</span> String(<span class="hljs-string">&quot;星光灿烂&quot;</span>);<br>        System.out.println(s1.equals(s2));<br>        System.out.println(s1==s2);<br>        System.out.println(<span class="hljs-string">&quot;-----------------------&quot;</span>);<br>        System.out.println(System.identityHashCode(s1));<br><br>        System.out.println(System.identityHashCode(s2));<br>        System.out.println(<span class="hljs-string">&quot;-----------------------&quot;</span>);<br>        String s3,s4;<br>        s3=<span class="hljs-string">&quot;阳光明媚&quot;</span>;<br>        s4=<span class="hljs-string">&quot;阳光明媚&quot;</span>;<br>        s4=<span class="hljs-string">&quot;ddd&quot;</span>;<br><br>        System.out.println(s3.equals(s4));<br>        System.out.println(s3==s4);<br>        System.out.println(<span class="hljs-string">&quot;-----------------------&quot;</span>);<br>        System.out.println(System.identityHashCode(s3));<br>        System.out.println(System.identityHashCode(s4));<br>        System.out.println(<span class="hljs-string">&quot;-----------------------&quot;</span>);<br>    &#125;<br>&#125;<br><br></code></pre></div></td></tr></table></figure>
+
+
+
+
+<h3 id="运行结果-1"><a href="#运行结果-1" class="headerlink" title="运行结果"></a>运行结果</h3><figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">true<br>false<br><br>-----------------------<br>1072408673<br>1531448569<br><br>-----------------------<br>false<br>false<br><br>-----------------------<br>1867083167<br>1915910607<br><br>-----------------------<br></code></pre></div></td></tr></table></figure>
+
+
+<ul>
+<li>这篇文章代表着我的Java区建好了，从今天开始我会陆续写一些我的Java学习内容当作笔记</li>
+<li>以后还要建立python区以及生活杂谈区💖💖💖💖ヾ(≧▽≦*)o</li>
+</ul>
+<p><img src="/images/p5.jpg" srcset="/img/loading.gif"></p>
+
             </div>
             <hr>
             <div>
@@ -235,10 +258,17 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/code/">code</a>
+                      <a class="hover-with-bg" href="/categories/java/">java</a>
                     
                   </div>
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a>
+                    
+                  </div>
                 
               </div>
               
@@ -249,9 +279,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/02/01/8,Convex/">
+                      <a href="/2021/07/01/1.%E6%88%91%E7%9A%84%E6%88%90%E9%95%BF/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Convex</span>
+                        <span class="hidden-mobile">我的成长</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -259,8 +289,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/01/23/2,%E6%95%B0%E5%AD%97%E4%B8%89%E8%A7%92%E5%BD%A2/">
-                        <span class="hidden-mobile">数字三角形</span>
+                      <a href="/2021/04/28/21.TheChildandHomework/">
+                        <span class="hidden-mobile">A - The Child and Homework</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
